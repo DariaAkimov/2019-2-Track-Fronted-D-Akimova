@@ -7,5 +7,19 @@
  */
 
 export default function convertBytesToHuman(bytes) {
-  // your solution goes here
+  if(typeof(bytes) != 'number' || bytes < 0)
+			{
+				return 'false';
+			}
+			if(bytes > 1024 && bytes < 1048576){
+				bytes = bytes/1024;
+				return bytes + 'Kb';
+			}
+			else if(bytes >= 1048576){
+				bytes = bytes/1048576;
+				return bytes + 'Mb';
+			}
+			else{
+			return k + ' b';
+		}
 }

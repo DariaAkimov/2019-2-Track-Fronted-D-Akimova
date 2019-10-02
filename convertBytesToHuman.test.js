@@ -10,12 +10,12 @@
 import convertBytesToHuman from './convertBytesToHuman';
 
 test('Возвращает false для неправильного типа данных', () => {
-  expect(convertBytesToHuman(/* ... */)).toBe(/* ... */)
+  expect(convertBytesToHuman(-1)).toBe('false')
   // ...
 });
 
 test('Возвращает корректное значение для чисел', () => {
-  expect(convertBytesToHuman(/* ... */)).toBe(/* ... */)
+  expect(convertBytesToHuman(5)).toBe('5 b')
   // ...
 });
 
