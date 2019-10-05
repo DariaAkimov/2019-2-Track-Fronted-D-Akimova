@@ -25,6 +25,20 @@ nonUniqueElements([10, 9, 10, 10, 9, 8]) == [10, 9, 10, 10, 9]
  */
 
 export default function nonUniqueElements(data) {
-  // your solution goes here
-  return data
+  var data2 = [];
+  var k;
+  for(var i=0; i<data.length; i++){
+			k=1;
+			for(var j=0; j<data.length; j++){
+				if(data[i] == data[j] && i != j){
+					k=0;
+					data2.push(data[j]);
+					break;
+				}
+
+			}
+
+		}
+		data = data2;
+  return data;
 }

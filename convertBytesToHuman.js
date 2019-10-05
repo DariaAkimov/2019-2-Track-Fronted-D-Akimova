@@ -20,6 +20,6 @@ export default function convertBytesToHuman(bytes) {
 				return bytes + 'Mb';
 			}
 			else{
-			return k + ' b';
+			return bytes + ' b';
 		}
 }
